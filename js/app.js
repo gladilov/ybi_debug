@@ -58,9 +58,9 @@
         // Splashscreen
         if (window.isphone) {
           navigator.splashscreen.show();
-          window.setTimeout(function () {
+          setTimeout(function () {
               navigator.splashscreen.hide();
-          }, 5000);
+          }, 3000);
         }
       });
       
