@@ -1,21 +1,21 @@
 (function($){
 
-    //var deviceReadyDeferred = $.Deferred();
+    var deviceReadyDeferred = $.Deferred();
     var jqmReadyDeferred = $.Deferred();
-    /*document.addEventListener("deviceReady", deviceReady, false);
+    document.addEventListener("deviceReady", deviceReady, false);
 
     function deviceReady() {
       deviceReadyDeferred.resolve();
-    }*/
+    }
 
     $(document).on('mobileinit', function() {
     //$(document).ready(function() {
       jqmReadyDeferred.resolve();
+      console.log('mobileinit');
     });
-    console.log(jqmReadyDeferred);
 
-    //$.when(deviceReadyDeferred, jqmReadyDeferred).then(doWhenBothFrameworksLoaded);
-    $.when(jqmReadyDeferred).then(doWhenBothFrameworksLoaded);
+    $.when(deviceReadyDeferred, jqmReadyDeferred).then(doWhenBothFrameworksLoaded);
+    //$.when(jqmReadyDeferred).then(doWhenBothFrameworksLoaded);
 
     function doWhenBothFrameworksLoaded() {
       // StatusBar
