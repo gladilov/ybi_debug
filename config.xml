@@ -4,11 +4,12 @@
   <description>YBI debug app</description>
   <author email="a.gladilov@yandex.ru" href="http://sapiens.media">Alex Gl</author>
   
-  <!--<access origin="*" />-->
-  <access origin="http://y-b-i.com" />
-  <allow-intent href="http://y-b-i.com/*" />
+  <access origin="*" />
+  <!--<access origin="http://y-b-i.com" />-->
+  <allow-navigation href="*" />
+  <allow-intent href="*" />
   
-  <!--<preference name="phonegap-version" value="cli-6.1.0" />-->
+  <preference name="phonegap-version" value="cli-6.1.0" />
   <gap:platform name="android" />
     
   <plugin name="cordova-plugin-device" source="pgb" />

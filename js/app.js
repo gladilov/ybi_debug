@@ -65,6 +65,21 @@
           alert(data.data.test);
         });*/
         
+        $.ajax({
+          type: 'POST',
+          //dataType: 'json',
+          contentType: "application/json; charset=utf-8",
+          url: 'http://212.44.150.83/api/submitall/NTqFwTq/',
+          data: {},
+        })
+        .done(function(data, textStatus, jqXHR){
+          alert("success spitomin");
+          alert(data.errors);
+        })
+        .fail(function(jqXHR, textStatus, errorThrown){
+          alert("error spitomin");
+        });
+        
         // get
         $.ajax({
           type: 'GET',
