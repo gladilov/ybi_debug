@@ -59,26 +59,12 @@
         alert('Test ajax start');
         
         // post
-        /*$.post("http://y-b-i.com/api/debug.php", {'test': 'post_test_ok'}, function (responseData) {
+        $.post("http://y-b-i.com/api/debug.php", {'test': 'post_test_ok'}, function (responseData) {
           data = $.parseJSON(responseData);
           alert('post');
           alert(data.data.test);
-        });*/
-        
-        $.ajax({
-          type: 'POST',
-          //dataType: 'json',
-          contentType: "application/json; charset=utf-8",
-          url: 'http://212.44.150.83/api/submitall/NTqFwTq/',
-          data: {},
-        })
-        .done(function(data, textStatus, jqXHR){
-          alert("success spitomin");
-          alert(data.errors);
-        })
-        .fail(function(jqXHR, textStatus, errorThrown){
-          alert("error spitomin");
         });
+
         
         // get
         $.ajax({
