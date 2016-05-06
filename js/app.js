@@ -41,8 +41,6 @@
       
       // TEST NOTIFICATION
       $('#test-notification').on('click', function(){
-        alert('Test notification');
-        
         // Notification
         if (window.isphone) {
           navigator.notification.alert(
@@ -52,36 +50,34 @@
             'Закрыть'
           );
         }
+        else alert('Test notification');
+      });
+      
+      // TEST SPLASHSCREEN
+      $('#test-splashscreen').on('click', function(){
+        // Splashscreen
+        if (window.isphone) {
+          navigator.splashscreen.show();
+          window.setTimeout(function () {
+              navigator.splashscreen.hide();
+          }, 5000);
+        }
       });
       
       // TEST AJAX
       $('#test-ajax').on('click', function(){
-        alert('Test ajax start');
-        
-        // post
-        $.post("http://y-b-i.com/api/debug.php", {'test': 'post_test_ok'}, function (responseData) {
-          data = $.parseJSON(responseData);
-          alert('post');
-          alert(data.data.test);
-        });
-
-        
-        // get
         $.ajax({
           type: 'GET',
           dataType: 'jsonp',
           jsonpCallback: 'userCreate',
-          //contentType: "application/json",
           contentType: "application/json; charset=utf-8",
           url: 'http://y-b-i.com/api/debug.php',
           data: {'method': 'POST', 'data': {'name': 'test', 'pass': '123'}},
-          //cache: false,
-          //async: true,
+          cache: false,
+          async: true,
           crossDomain: true,
         })
         .done(function(data, textStatus, jqXHR){
-          alert('get');
-          alert("success");
           console.log(data);
           
           // Notification
@@ -93,11 +89,9 @@
               'Закрыть'
             );
           }
-          
-          alert('Test ajax stop');
+          else alert("Success. Test ajax stop");
         })
         .fail(function(jqXHR, textStatus, errorThrown){
-          alert("error");
           console.log(data);
           
           // Notification
@@ -109,8 +103,7 @@
               'Закрыть'
             );
           }
-          
-          alert('Test ajax stop');
+          else alert("Error. Test ajax stop");
         });
         
         
