@@ -4,15 +4,18 @@
   <description>YBI debug app</description>
   <author email="a.gladilov@yandex.ru" href="http://sapiens.media">Alex Gl</author>
   
-  <access origin="*" />
+  <!--<access origin="*" />-->
+  <access origin="http://y-b-i.com" />
+  <allow-intent href="http://y-b-i.com/*" />
   
-  <preference name="phonegap-version" value="cli-6.1.0" />
+  <!--<preference name="phonegap-version" value="cli-6.1.0" />-->
   <gap:platform name="android" />
     
   <plugin name="cordova-plugin-device" source="pgb" />
   <plugin name="cordova-plugin-dialogs" source="pgb" />
   <plugin name="cordova-plugin-network-information" source="pgb" />
   <plugin name="cordova-plugin-statusbar" source="npm" />
+  <plugin name="cordova-plugin-whitelist" source="npm" />
     
   <preference name="orientation" value="portrait" />
   <preference name="fullscreen" value="false" />

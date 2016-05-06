@@ -59,21 +59,23 @@
         alert('Test ajax start');
         
         // post
-        $.post("http://y-b-i.com/api/debug.php", {'test': 'post_test_ok'}, function (responseData) {
+        /*$.post("http://y-b-i.com/api/debug.php", {'test': 'post_test_ok'}, function (responseData) {
           data = $.parseJSON(responseData);
           alert('post');
           alert(data.data.test);
-        });
+        });*/
         
         // get
         $.ajax({
           type: 'GET',
           dataType: 'jsonp',
           jsonpCallback: 'userCreate',
+          //contentType: "application/json",
+          contentType: "application/json; charset=utf-8",
           url: 'http://y-b-i.com/api/debug.php',
           data: {'method': 'POST', 'data': {'name': 'test', 'pass': '123'}},
-          cache: false,
-          async: true,
+          //cache: false,
+          //async: true,
           crossDomain: true,
         })
         .done(function(data, textStatus, jqXHR){
