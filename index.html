@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8">
     <!--<meta http-equiv="Content-Security-Policy" content="default-src http://y-b-i.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline'; media-src *; img-src * data:;" />-->
-    <meta http-equiv="Content-Security-Policy" content="default-src http://y-b-i.com; style-src 'self'; script-src 'self' http://y-b-i.com; img-src 'self' data:;" />
+    <meta http-equiv="Content-Security-Policy" content="default-src http://y-b-i.com; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' http://y-b-i.com; connect-src 'self' http://y-b-i.com; img-src 'self' data:; font-src 'self' 'unsafe-inline' http://y-b-i.com" />
+    <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>YBI debug</title>
-    <link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet"  href="css/app.css">
+    <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/app.css">
     <script src="js/jquery-1.12.1.min.js"></script>
 </head>
 <body>
@@ -19,7 +20,7 @@
           <a href="#" id="test-notification" data-role="button" data-icon="check">Test notification</a>
           <a href="#" id="test-ajax" data-role="button" data-icon="check">Test ajax</a>
           <a href="#" id="test-splashscreen" data-role="button" data-icon="check">Test splashscreen</a>
-          <a href="#" id="test-device-udid" data-role="button" data-icon="check">Get UDID</a>
+          <a href="#" id="test-device-uuid" data-role="button" data-icon="check">Get UUID</a>
           
           <div id="message"></div>
       </div>
