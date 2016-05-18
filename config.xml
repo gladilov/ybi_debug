@@ -19,12 +19,15 @@
   <plugin name="cordova-plugin-statusbar" source="npm" />
   <plugin name="cordova-plugin-whitelist" source="npm" />
   <plugin name="cordova-plugin-splashscreen" source="npm" />
-    
+  <plugin name="cordova-plugin-wkwebview-engine" source="npm" />
+  
+  <preference name="DisallowOverscroll" value="true"/>
   <preference name="orientation" value="portrait" />
   <preference name="fullscreen" value="false" />
   <preference name="target-device" value="universal" />
   <preference name="ios-statusbarstyle" value="black-opaque" />
   <preference name="android-installLocation" value="auto" />
+  <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
   
   <preference name="SplashScreen" value="screen" />
   <preference name="SplashScreenDelay" value="3000" />

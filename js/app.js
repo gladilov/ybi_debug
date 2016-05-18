@@ -38,6 +38,7 @@
       }
       
       // Logic
+      var $message = $('#message');
       
       // TEST NOTIFICATION
       $('#test-notification').on('click', function(){
