@@ -38,6 +38,7 @@
       }
       
       // Logic
+      var $message = $('#message');
       
       // TEST NOTIFICATION
       $('#test-notification').on('click', function(){
@@ -51,17 +52,6 @@
           );
         }
         else alert('Test notification');
-      });
-      
-      // TEST SPLASHSCREEN
-      $('#test-splashscreen').on('click', function(){
-        // Splashscreen
-        if (window.isphone) {
-          navigator.splashscreen.show();
-          setTimeout(function () {
-              navigator.splashscreen.hide();
-          }, 3000);
-        }
       });
       
       // TEST AJAX
@@ -105,8 +95,32 @@
           }
           else alert("Error. Test ajax stop");
         });
-        
-        
+      });
+      
+      // TEST SPLASHSCREEN
+      $('#test-splashscreen').on('click', function(){
+        // Splashscreen
+        if (window.isphone) {
+          navigator.splashscreen.show();
+          setTimeout(function () {
+              navigator.splashscreen.hide();
+          }, 3000);
+        }
+        else alert("Function work only mobile device.");
+      });
+      
+      // TEST DEVICE UDID
+      $('#test-device-udid').on('click', function(){
+        if (window.isphone) {
+          navigator.notification.alert(
+            'UDID: ' + device.uuid,
+            null,
+            'Device udid',
+            'Закрыть'
+          );
+        }
+        //else alert('UDID: ' + device.uuid);
+        else alert("Function work only mobile device.");
       });
 
     }
