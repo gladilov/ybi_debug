@@ -1,5 +1,5 @@
 (function($){
-
+    
     var deviceReadyDeferred = $.Deferred();
     var jqmReadyDeferred = $.Deferred();
     
@@ -107,6 +107,19 @@
         });
         
         
+      });
+      
+      // TEST DEVICE UUID
+      $('#test-device-uuid').on('click', function(){
+        if (window.isphone) {
+          navigator.notification.alert(
+            'UUID: ' + device.uuid,
+            null,
+            'Device uuid',
+            'Закрыть'
+          );
+        }
+        else alert("Function work only mobile device.");
       });
 
     }
