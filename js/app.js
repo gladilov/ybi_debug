@@ -109,17 +109,16 @@
         else alert("Function work only mobile device.");
       });
       
-      // TEST DEVICE UDID
-      $('#test-device-udid').on('click', function(){
+      // TEST DEVICE UUID
+      $('#test-device-uuid').on('click', function(){
         if (window.isphone) {
           navigator.notification.alert(
-            'UDID: ' + device.uuid,
+            'UUID: ' + device.uuid,
             null,
-            'Device udid',
+            'Device uuid',
             'Закрыть'
           );
         }
-        //else alert('UDID: ' + device.uuid);
         else alert("Function work only mobile device.");
       });
 
