@@ -119,7 +119,6 @@
             'Закрыть'
           );
         }
-        //else alert('UUID: ' + device.uuid);
         else alert("Function work only mobile device.");
       });
 
