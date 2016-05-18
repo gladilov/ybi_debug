@@ -11,6 +11,7 @@
   
   <preference name="phonegap-version" value="cli-6.1.0" />
   <gap:platform name="android" />
+  <gap:platform name="ios" />
     
   <plugin name="cordova-plugin-device" source="pgb" />
   <plugin name="cordova-plugin-dialogs" source="pgb" />
