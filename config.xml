@@ -24,8 +24,9 @@
   <plugin name="cordova-plugin-whitelist" source="npm" />
   <plugin name="cordova-plugin-splashscreen" source="npm" />
   <plugin name="cordova-plugin-wkwebview-engine" source="npm" />
-  <plugin name="cordova-labs-local-webserver" source="npm" />
-  <plugin name="cordova-labs-wkwebview-engine-localhost" source="npm" />
+  
+  <plugin spec="https://github.com/apache/cordova-plugins.git#master:local-webserver" />
+  <plugin spec="https://github.com/apache/cordova-plugins.git#master:wkwebview-engine-localhost" />
   
   
   <preference name="DisallowOverscroll" value="true"/>
