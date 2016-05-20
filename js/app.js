@@ -25,6 +25,9 @@
       $.support.cors = true;
       $.mobile.allowCrossDomainPages = true;
       
+      //$.mobile.hashListeningEnabled = false;/* temp */
+      $.mobile.pushStateEnabled = false;/* temp */
+      
       jqmReadyDeferred.resolve();
     });
 
@@ -124,12 +127,12 @@
       });
       
       // TEST IOS NAVIGATION BETWEEN OTHER HTML FILES
-      $('#test-goto-index').on('click', function(){
-        $(':mobile-pagecontainer').pagecontainer('change', 'index.html', {reloadPage: false});
-        //$(':mobile-pagecontainer').pagecontainer('change', 'page2.html', {reloadPage: false});
+      $('#test-goto-page4').on('click', function(){
+        $.mobile.pageContainer.pagecontainer("change", '#page4', {reload: false, transition: 'slide'});
+
       });
-      $('#test-goto-page3').on('click', function(){
-        $(':mobile-pagecontainer').pagecontainer('change', 'page3');
+      $('#test-goto-page5').on('click', function(){
+        $(':mobile-pagecontainer').pagecontainer("change", 'page5.html', {reload: true});
       });
 
     }
