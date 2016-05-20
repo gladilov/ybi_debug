@@ -5,11 +5,12 @@
   <author email="a.gladilov@yandex.ru" href="http://sapiens.media">Alex Gl</author>
   
   <!--<access origin="*" />-->
-  <access origin="*" />
-  <allow-navigation href="*" />
-  <allow-intent href="*" />
+  <access origin="http://y-b-i.com" />
+  <allow-navigation href="http://y-b-i.com/*" />
+  <allow-intent href="http://y-b-i.com/*" />
+
   
-  <preference name="phonegap-version" value="cli-6.1.0" />
+  <preference name="phonegap-version" value="cli-5.2.0" />
   <gap:platform name="android" />
   <gap:platform name="ios" />
     

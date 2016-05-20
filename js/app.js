@@ -128,6 +128,9 @@
         $(':mobile-pagecontainer').pagecontainer('change', 'index.html', {reloadPage: false});
         //$(':mobile-pagecontainer').pagecontainer('change', 'page2.html', {reloadPage: false});
       });
+      $('#test-goto-page3').on('click', function(){
+        $(':mobile-pagecontainer').pagecontainer('change', 'page3');
+      });
 
     }
 
