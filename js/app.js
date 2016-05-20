@@ -124,8 +124,8 @@
       });
       
       // TEST IOS NAVIGATION BETWEEN OTHER HTML FILES
-      $('#test-goto-page2').on('click', function(){
-        $(':mobile-pagecontainer').pagecontainer('change', 'page2.html');
+      $('#test-goto-index').on('click', function(){
+        $(':mobile-pagecontainer').pagecontainer('change', 'index.html', {reloadPage: false});
         //$(':mobile-pagecontainer').pagecontainer('change', 'page2.html', {reloadPage: false});
       });
 

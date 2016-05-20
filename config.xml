@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-  <widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.ybi.debug.app" version = "0.2">
+  <widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.ybi.debug.app" version = "0.3">
   <name>YBI debug</name>
   <description>YBI debug app</description>
   <author email="a.gladilov@yandex.ru" href="http://sapiens.media">Alex Gl</author>
