@@ -4,8 +4,8 @@
   <description>YBI debug app</description>
   <author email="a.gladilov@yandex.ru" href="http://sapiens.media">Alex Gl</author>
   
-  <!--<content src="index.html" />-->
-  <content src="http://localhost:0" />
+  <content src="index.html" />
+  <!--<content src="http://localhost:0" />-->
   
   <!--<access origin="*" />-->
   <access origin="http://y-b-i.com" />
