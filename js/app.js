@@ -1,5 +1,5 @@
 (function($){
-    
+
     var deviceReadyDeferred = $.Deferred();
     var jqmReadyDeferred = $.Deferred();
     
@@ -54,17 +54,6 @@
         else alert('Test notification');
       });
       
-      // TEST SPLASHSCREEN
-      $('#test-splashscreen').on('click', function(){
-        // Splashscreen
-        if (window.isphone) {
-          navigator.splashscreen.show();
-          setTimeout(function () {
-              navigator.splashscreen.hide();
-          }, 3000);
-        }
-      });
-      
       // TEST AJAX
       $('#test-ajax').on('click', function(){
         $.ajax({
@@ -106,8 +95,18 @@
           }
           else alert("Error. Test ajax stop");
         });
-        
-        
+      });
+      
+      // TEST SPLASHSCREEN
+      $('#test-splashscreen').on('click', function(){
+        // Splashscreen
+        if (window.isphone) {
+          navigator.splashscreen.show();
+          setTimeout(function () {
+              navigator.splashscreen.hide();
+          }, 3000);
+        }
+        else alert("Function work only mobile device.");
       });
       
       // TEST DEVICE UUID
@@ -120,7 +119,14 @@
             'Закрыть'
           );
         }
+        //else alert('UUID: ' + device.uuid);
         else alert("Function work only mobile device.");
+      });
+      
+      // TEST IOS NAVIGATION BETWEEN OTHER HTML FILES
+      $('#test-goto-page2').on('click', function(){
+        $(':mobile-pagecontainer').pagecontainer('change', 'page2.html');
+        //$(':mobile-pagecontainer').pagecontainer('change', 'page2.html', {reloadPage: false});
       });
 
     }
