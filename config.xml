@@ -46,6 +46,9 @@
       <dict>
         <key>NSAllowsArbitraryLoads</key>
         <true/>
+        <!--Include to specify minimum TLS version-->
+        <key>NSTemporaryExceptionMinimumTLSVersion</key>
+        <string>TLSv1.1</string>
       </dict>
     </config-file>
   </platform>
