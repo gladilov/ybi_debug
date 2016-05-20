@@ -13,7 +13,7 @@
   <allow-intent href="http://y-b-i.com/*" />
 
   
-  <preference name="phonegap-version" value="cli-6.2.0" />
+  <preference name="phonegap-version" value="cli-6.1.0" />
   <gap:platform name="android" />
   <gap:platform name="ios" />
     
