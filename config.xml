@@ -9,7 +9,9 @@
   <!--<access origin="*" />-->
   <access origin="http://y-b-i.com" />
   <allow-navigation href="http://y-b-i.com/*" />
+  <allow-navigation href="file://*" />
   <allow-intent href="http://y-b-i.com/*" />
+  <allow-intent href="file://*" />
 
   
   <preference name="phonegap-version" value="cli-6.0.0" />
@@ -23,6 +25,9 @@
   <plugin name="cordova-plugin-whitelist" source="npm" />
   <plugin name="cordova-plugin-splashscreen" source="npm" />
   <plugin name="cordova-plugin-wkwebview-engine" source="npm" />
+  <!--<plugin name="cordova-labs-local-webserver" source="npm" />-->
+  <!--<plugin name="cordova-labs-wkwebview-engine-localhost" source="npm" />-->
+  
   
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="orientation" value="portrait" />
