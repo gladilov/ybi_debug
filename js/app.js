@@ -19,6 +19,8 @@
 
     function deviceReady() {
       deviceReadyDeferred.resolve();
+      
+      if (window.isphone) StatusBar.show();
     }
 
     $(document).on('mobileinit', function() {
@@ -36,8 +38,8 @@
     function doWhenBothFrameworksLoaded() {
       // StatusBar
       if (window.isphone) {
-        StatusBar.overlaysWebView( false );
-        StatusBar.backgroundColorByName("gray");
+        StatusBar.overlaysWebView(false);
+        StatusBar.backgroundColorByName("red");
       }
       
       // Logic
@@ -139,18 +141,14 @@
       $('#test-exit-app').on('click', function(){
         if (window.isphone) {
           function onConfirm(buttonIndex) {
-              alert('You selected button ' + buttonIndex);
-              
-              if(buttonIndex == "1"){
-                  navigator.app.exitApp();
-              }
+            if (buttonIndex == "1") navigator.app.exitApp();
           }
 
           navigator.notification.confirm(
-              'Exit app?', // message
-               onConfirm,            // callback to invoke with index of button pressed
-              'Exit',           // title
-              ['Ok, exit','Cancel']     // buttonLabels
+            'Exit app?', // message
+             onConfirm, // callback to invoke with index of button pressed
+            'Exit', // title
+            ['Ok, exit','Cancel'] // buttonLabels
           );
         }
         else alert("Function work only mobile device.");

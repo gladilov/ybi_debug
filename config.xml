@@ -32,7 +32,7 @@
   
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="orientation" value="portrait" />
-  <preference name="fullscreen" value="false" />
+  <preference name="fullscreen" value="true" />
   <preference name="target-device" value="universal" />
   <preference name="ios-statusbarstyle" value="black-opaque" />
   <preference name="android-installLocation" value="auto" />
