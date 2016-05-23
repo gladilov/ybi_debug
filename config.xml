@@ -72,6 +72,10 @@
   <icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
 
   <platform name="android">
+    <config-file platform="android" parent="/manifest">
+      <application android:theme="@android:style/theme.DeviceDefault"></application>
+    </config-file>
+    
     <splash src="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
     <splash src="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
     <splash src="res/screen/android/splash-port-mdpi.png" density="mdpi"/>
