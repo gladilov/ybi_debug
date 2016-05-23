@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var fs = require('fs');
+/*var fs = require('fs');
 var path = require('path');
 
 module.exports = function(context) {
@@ -26,4 +26,12 @@ var copyRecursiveSync = function(src, dest) {
   } else {
     fs.linkSync(src, dest);
   }
-};
+};*/
+
+var fs = require("fs");
+
+if (!fs.existsSync("res/values")) {
+    fs.mkdirSync("res/values");
+}
+
+fs.createReadStream("res/values/style.xml").pipe(fs.createWriteStream("res/values/style.xml"));
