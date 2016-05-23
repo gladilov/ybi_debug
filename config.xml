@@ -81,7 +81,7 @@
     
     <!--<preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Light" />-->
     <!--<preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Material.Light" />-->
-    <preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.AppCompat.Light.DarkActionBar" />
+    <preference name="android-manifest/application/activity/@android:theme" value="@android:style/AppTheme" />
     
     <splash src="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
     <splash src="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
