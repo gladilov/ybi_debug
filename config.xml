@@ -73,9 +73,9 @@
   <icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
 
   <platform name="android">
-    <config-file platform="android" parent="/manifest">
+    <!--<config-file platform="android" parent="/manifest">
       <application android:theme="@android:style/Theme.DeviceDefault"></application>
-    </config-file>
+    </config-file>-->
     
     <!--<preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Light" />-->
     <preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.DeviceDefault" />
