@@ -74,11 +74,11 @@
 
   <platform name="android">
     <config-file platform="android" parent="/manifest">
-      <application android:theme="@android:style/Theme.Light"></application>
+      <application android:theme="@android:style/Theme.DeviceDefault"></application>
     </config-file>
     
-    <!--<preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.DeviceDefault" />-->
-    <preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Light" />
+    <!--<preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Light" />-->
+    <preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.DeviceDefault" />
     
     <splash src="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
     <splash src="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
