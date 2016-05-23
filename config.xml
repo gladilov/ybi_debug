@@ -32,8 +32,10 @@
   
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="orientation" value="portrait" />
-  <preference name="fullscreen" value="true" />
+  <preference name="fullscreen" value="false" />
   <preference name="target-device" value="universal" />
+  <preference name="StatusBarBackgroundColor" value="#16635D" />
+  <preference name="StatusBarStyle" value="lightcontent" />
   <preference name="ios-statusbarstyle" value="black-opaque" />
   <preference name="android-installLocation" value="auto" />
   <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
@@ -78,7 +80,8 @@
     </config-file>-->
     
     <!--<preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Light" />-->
-    <preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.DeviceDefault" />
+    <!--<preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Material.Light" />-->
+    <preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.AppCompat.Light.DarkActionBar" />
     
     <splash src="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
     <splash src="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
