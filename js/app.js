@@ -134,6 +134,27 @@
       $('#test-goto-page5').on('click', function(){
         $(':mobile-pagecontainer').pagecontainer("change", 'page5.html', {reload: true});
       });
+      
+      // TEST EXIT APP
+      $('#test-exit-app').on('click', function(){
+        if (window.isphone) {
+          function onConfirm(buttonIndex) {
+              alert('You selected button ' + buttonIndex);
+              
+              if(buttonIndex == "1"){
+                  navigator.app.exitApp();
+              }
+          }
+
+          navigator.notification.confirm(
+              'Exit app?', // message
+               onConfirm,            // callback to invoke with index of button pressed
+              'Exit',           // title
+              ['Ok, exit','Cancel']     // buttonLabels
+          );
+        }
+        else alert("Function work only mobile device.");
+      });
 
     }
 
