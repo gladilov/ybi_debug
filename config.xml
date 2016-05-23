@@ -75,15 +75,13 @@
   <icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
 
   <platform name="android">
-    <config-file target="AndroidManifest.xml" parent="./application">
-      <!--<application android:theme="@android:style/Theme.YbiTheme"></application>
-      <activity android:theme="@android:style/Theme.YbiTheme"/>-->
+    <!--<config-file target="AndroidManifest.xml" parent="./application">
       <activity android:theme="@style/Theme.YbiTheme"/>
-    </config-file>
+    </config-file>-->
     
     <!--<preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Light" />-->
     <!--<preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Material.Light" />-->
-    <!--<preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.DeviceDefault" />-->
+    <preference name="android-manifest/application/activity/@android:theme" value="@style/Theme.YbiTheme" />
     
     <splash src="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
     <splash src="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
