@@ -24,7 +24,8 @@
   <plugin name="cordova-plugin-whitelist" source="npm" />
   <plugin name="cordova-plugin-splashscreen" source="npm" />
   <plugin name="cordova-plugin-wkwebview-engine" source="npm" />
-  <plugin name="cordova-custom-config" source="npm" />
+  <!--<plugin name="cordova-custom-config" source="npm" />-->
+  <plugin name="cordova-plugin-settings-hook" source="npm" />
   
   <!--<plugin spec="https://github.com/apache/cordova-plugins.git#master:local-webserver" />-->
   <!--<plugin spec="https://github.com/apache/cordova-plugins.git#master:wkwebview-engine-localhost" />-->
@@ -74,14 +75,19 @@
   <icon gap:platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
   <icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
 
+  
+  <hook type="after_prepare" src="scripts/android/afterPrepare.js" />
+  
   <platform name="android">
+    <!--<preference name="android-theme" value="@android:style/YbiTheme" />-->
+  
      <!--<config-file platform="android" target="AndroidManifest.xml">
       <application android:theme="@style/Theme.YbiTheme">
     </config-file>-->
     
     <!--<preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Light" />-->
     <!--<preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Material.Light" />-->
-    <preference name="android-manifest/application/@android:theme" value="@style/YbiTheme" />
+    <!--<preference name="android-manifest/application/@android:theme" value="@style/YbiTheme" />-->
     
     <splash src="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
     <splash src="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
