@@ -3,6 +3,8 @@
 var fs = require('fs');
 var path = require('path');
 
+console.log("Running hook: scripts/android/before_build.js");
+
 module.exports = function(context) {
   var androidPlatformDir = path.join(context.opts.projectRoot, "res");
   if (fs.existsSync(androidPlatformDir)) {

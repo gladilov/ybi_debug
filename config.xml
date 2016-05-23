@@ -76,10 +76,12 @@
   <icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
 
   
-  <!--<hook type="after_prepare" src="scripts/android/afterPrepare.js" />-->
-  <hook type="after_platform_add" src="scripts/android/afterPrepare.js" />
   
   <platform name="android">
+    <!--<hook type="after_prepare" src="scripts/android/afterPrepare.js" />-->
+    <hook type="before_build" src="scripts/android/before_build.js" />
+    
+    
     <!--<preference name="android-theme" value="@android:style/YbiTheme" />-->
   
      <!--<config-file platform="android" target="AndroidManifest.xml">
