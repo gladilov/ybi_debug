@@ -78,7 +78,7 @@
     </config-file>-->
     
     <!--<preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.DeviceDefault" />-->
-    <preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Red.NoTitleBar" />
+    <preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Wallpaper" />
     
     <splash src="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
     <splash src="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
