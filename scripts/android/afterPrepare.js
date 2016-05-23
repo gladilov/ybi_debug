@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
-/*var fs = require('fs');
+var fs = require('fs');
 var path = require('path');
 
 module.exports = function(context) {
-  var androidPlatformDir = path.join(context.opts.projectRoot, "platforms/android");
+  var androidPlatformDir = path.join(context.opts.projectRoot, "res");
   if (fs.existsSync(androidPlatformDir)) {
     var srcDir = path.join(context.opts.projectRoot, "resources/android/res");
-    var targetDir = path.join(context.opts.projectRoot, "platforms/android/res");
+    var targetDir = path.join(context.opts.projectRoot, "res");
     copyRecursiveSync(srcDir, targetDir);
   }
 }
@@ -26,12 +26,12 @@ var copyRecursiveSync = function(src, dest) {
   } else {
     fs.linkSync(src, dest);
   }
-};*/
+};
 
-var fs = require("fs");
+/*var fs = require("fs");
 
 if (!fs.existsSync("res/values")) {
     fs.mkdirSync("res/values");
 }
 
-fs.createReadStream("res/values/style.xml").pipe(fs.createWriteStream("res/values/style.xml"));
+fs.createReadStream("res/values/style.xml").pipe(fs.createWriteStream("res/values/style.xml"));*/
