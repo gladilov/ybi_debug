@@ -92,6 +92,11 @@
   
   
   <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="SocialSharing">
+        <param name="android-package" value="cordova-plugin-x-socialsharing.SocialSharing" />
+      </feature>
+    </config-file>
     <!--<hook type="after_prepare" src="scripts/android/afterPrepare.js" />-->
     <!--<hook type="before_build" src="scripts/android/before_build.js" />-->
     
