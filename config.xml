@@ -32,7 +32,7 @@
   
   <plugin name="cordova-plugin-x-toast" source="npm" />
   <!--<plugin name="cordova-plugin-socialsharing" source="npm" />-->
-  <gap:plugin name="cordova-plugin-socialsharing" source="npm" />
+  <gap:plugin name="cordova-plugin-socialsharing" source="npm" version="5.1.1" />
   
   
   <!--TODO:-->
