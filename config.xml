@@ -31,15 +31,12 @@
   <!--<plugin spec="https://github.com/apache/cordova-plugins.git#master:wkwebview-engine-localhost" />-->
   
   <plugin name="cordova-plugin-x-toast" source="npm" />
-  <!--<plugin name="cordova-plugin-socialsharing" source="npm" />-->
   <plugin name="cordova-plugin-x-socialsharing" source="npm" />
   
   
   <!--TODO:-->
   <!--<plugin name="cordova-plugin-calendar" source="npm" />-->
-  <!--<plugin name="cordova-plugin-x-toast" source="npm" />-->
   <!--<plugin name="cordova-plugin-actionsheet" source="npm" />-->
-  <!--<plugin name="cordova-plugin-socialsharing" source="npm" />-->
   <!--<plugin name="cordova-plugin-facebook4" source="npm">-->
       <!--<param name="APP_ID" value="626906180797476" />-->
       <!--<param name="APP_NAME" value="YBIConnect" />-->
