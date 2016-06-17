@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-  <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.ybi.debug.app" version="0.3">
+  <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.ybi_debug.app" version="0.3.1">
   <name>YBI debug</name>
   <description>YBI debug app</description>
   <author email="a.gladilov@yandex.ru" href="http://sapiens.media">Alex Gl</author>
@@ -25,11 +25,24 @@
   <plugin name="cordova-plugin-splashscreen" source="npm" />
   <plugin name="cordova-plugin-wkwebview-engine" source="npm" />
   <!--<plugin name="cordova-custom-config" source="npm" />-->
-  <plugin name="cordova-plugin-settings-hook" source="npm" />
+  <!--<plugin name="cordova-plugin-settings-hook" source="npm" />-->
   
   <!--<plugin spec="https://github.com/apache/cordova-plugins.git#master:local-webserver" />-->
   <!--<plugin spec="https://github.com/apache/cordova-plugins.git#master:wkwebview-engine-localhost" />-->
   
+  <plugin name="cordova-plugin-x-toast" source="npm" />
+  <plugin name="cordova-plugin-socialsharing" source="npm" />
+  
+  
+  <!--TODO:-->
+  <!--<plugin name="cordova-plugin-calendar" source="npm" />-->
+  <!--<plugin name="cordova-plugin-x-toast" source="npm" />-->
+  <!--<plugin name="cordova-plugin-actionsheet" source="npm" />-->
+  <!--<plugin name="cordova-plugin-socialsharing" source="npm" />-->
+  <!--<plugin name="cordova-plugin-facebook4" source="npm">-->
+      <!--<param name="APP_ID" value="626906180797476" />-->
+      <!--<param name="APP_NAME" value="YBIConnect" />-->
+  <!--</plugin>-->
   
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="orientation" value="portrait" />
@@ -79,7 +92,7 @@
   
   <platform name="android">
     <!--<hook type="after_prepare" src="scripts/android/afterPrepare.js" />-->
-    <hook type="before_build" src="scripts/android/before_build.js" />
+    <!--<hook type="before_build" src="scripts/android/before_build.js" />-->
     
     
     <!--<preference name="android-theme" value="@android:style/YbiTheme" />-->
